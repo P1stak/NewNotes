@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="INotes.cs" />
     <Compile Include="Notes.cs" />
     <Compile Include="NotesContext.cs" />
     <Compile Include="Program.cs" />

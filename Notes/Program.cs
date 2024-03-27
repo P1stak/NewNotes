@@ -12,8 +12,14 @@ namespace Notes
         {
             using (NotesContext notes = new NotesContext())
             {
-                notes.Insert("Note1", "MyFirstNote", DateTime.Now);
+                notes.Insert(1, "One");
+                notes.Insert(2, "Two", DateTime.Now);
+                notes.Insert("Three", DateTime.Now);
+                notes.Insert("bla-bla-bla", DateTime.Now);
+                notes.Update(2, "ThReE");
                 notes.Show();
+
+                
             }
         }
     }
